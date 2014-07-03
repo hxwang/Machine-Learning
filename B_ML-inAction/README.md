@@ -1,7 +1,8 @@
-Book: [Machine Learning in Action](http://www.manning.com/pharrington/)
-------------------------------------------------------------------------
-author: Peter Harrington
+Book: [Machine Learning in Action](http://www.manning.com/pharrington/) 
+-----------------------------------------------------------------------
 
-Algorithms included:
+### by Peter Harrington
+
+### Algorithms included:
 1. K-nearest-neighbours(KNN)
 2. 
