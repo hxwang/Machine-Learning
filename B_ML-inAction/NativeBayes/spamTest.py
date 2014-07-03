@@ -55,4 +55,6 @@ def spamTest():
 
 
 if __name__=='__main__':
+    #test whether an email is spam or not
     spamTest()
+
