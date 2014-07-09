@@ -1,6 +1,9 @@
 #code for book Machine learning in action
 
 from numpy import *
+import regression as reg
+import matplotlib.pyplot as plt
+import ridgeRegression as ridgeReg
 
 
 #introduce lambda to punish large w
@@ -24,9 +27,28 @@ def ridgeTest(xArr, yArr):
     xVar = var(xMat, 0)
     xMat = (xMat - xMeans)/xVar
     numTestPts = 30
-    wMat = zeros(numTestPts, shape(xMat)[1])
+    wMat = zeros((numTestPts, shape(xMat)[1]))
     for i in range(numTestPts):
-        
+        ws = ridgeRegress(xMat, yMat, exp(i-10))
+        wMat[i,:] = ws.T
+    return wMat
+
+def plotFigure(ridgeWeights):
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ax.plot(ridgeWeights)
+    plt.show()
+
+def main():
+    abX, abY = reg.loadDataSet('abalone.txt')
+    ridgeWeights = ridgeTest(abX, abY)
+    plotFigure(ridgeWeights)
+
+if __name__ == "__main__":
+    main()
+
+
+
 
 
 
