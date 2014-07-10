@@ -1,5 +1,7 @@
+Parameter Server Tutorial
+===============
+
 Lecturer: Mu Li
-Topic: 
 
 Notes recorded by Huangxin
 
@@ -35,29 +37,23 @@ Notes recorded by Huangxin
 	- one feature may be too small, you need to pay the thread synchronizations
 
 **Block descent**
-- Basic iea
-	-
-
+- Basic idea
 - Comments
 	- better than sequential coordination descent
-
 - implement BlockCD
 	- if block is big enough, the synchronizations cost and other cost are relative trivial
-	- multi-threaded within in a block
-	
+	- multi-threaded within in a block	
 - Asynchronous Updating
 	- computation use cpu power, but push and pull only use network
 	- idea: keep the CPU busy
 	- parallel CPU and I/O, hide synchronizations cost
 	- a worker: eventual consistency(#TODO: check distributed system)
 	- we only allow one block is inconsistent
-
 - Analysis
 	- L_{var}: correlation of features in a block
 	- L_{cov}: correlation of features between too neighbour blocks
 	- \tau bounded delay
 	- fixed learning rate guarantee converge
-	
 - Implement via ParaServer
 	- push gradients to server
 	- pull weights from server
@@ -67,7 +63,6 @@ Notes recorded by Huangxin
 		- for each task, sequential dependency
 		- between tasks: eventual dependency
 		- bounded delay?
-
 - Implement bounded-delay:
 	- executed at the scheduler
 	- for each iteration, for each block, update
