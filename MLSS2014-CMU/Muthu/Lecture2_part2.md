@@ -3,8 +3,8 @@ Lecture 2 (Part2)
 
 Note record by Huangxin
 
-##
-Topic: L0 Sampling
+
+**Topic: L0 Sampling**
 
 - Problem description
 	- Main idea: random selection of distinct numbers
@@ -17,8 +17,8 @@ Topic: L0 Sampling
 - Paper
 	- Analyzing graph structure via linear measurement, SODA12
 
-###	
-Topic: L2 approximation
+	
+**Topic: L2 approximation**
 
 - Main idea:
 	- ||F||_2 = \sum_i F[i]^2
@@ -27,8 +27,8 @@ Topic: L2 approximation
 - Paper	
 	- Low rank approximation and regression in Input sparsity Time
 
-###
-Topic3: Nonstreaming Problems
+
+**Topic3: Nonstreaming Problems**
 
 - Problem Statement:
 	- compute the discrete fourier transformation of signal of size n 
