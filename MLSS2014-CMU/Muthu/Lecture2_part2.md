@@ -2,7 +2,7 @@ Lecture 2 (Part2)
 
 Note record by Huangxin
 
--------------------------------------------------------------------------------------------------------------------
+###
 Topic: L0 Sampling
 
 -Problem description
@@ -16,7 +16,7 @@ Topic: L0 Sampling
 -Paper
 	-Analyzing graph structure via linear measurement, SODA12
 
--------------------------------------------------------------------------------------------------------------------	
+###	
 Topic: L2 approximation
 
 -Main idea:
@@ -26,18 +26,18 @@ Topic: L2 approximation
 -Paper	
 	-Low rank approximation and regression in Input sparsity Time
 
--------------------------------------------------------------------------------------------------------------------	
+###
 Topic3: Nonstreaming Problems
 
--Problem Statement:
-	-compute the discrete fourier transformation of signal of size n 
-	-classical: o(n logn) time
-	-recent result: o(k logn) time
+- Problem Statement:
+	- compute the discrete fourier transformation of signal of size n 
+	- classical: o(n logn) time
+	- recent result: o(k logn) time
 
-	-Paper: Nearly Optimal Sparse Fourier Transform, STOC12
+	- Paper: Nearly Optimal Sparse Fourier Transform, STOC12
 	
--Comments:
-	-the outline algorithm is similar to ? (index problem)
+- Comments:
+	- the outline algorithm is similar to ? (index problem)
 
 -------------------------------------------------------------------------------------------------------------------
 
