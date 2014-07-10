@@ -24,7 +24,7 @@ Topic: L2 approximation
 	- ||F||_2 = \sum_i F[i]^2
 	- Least square approximation
 	
--Paper	
+- Paper	
 	- Low rank approximation and regression in Input sparsity Time
 
 ###
