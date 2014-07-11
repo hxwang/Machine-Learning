@@ -5,11 +5,10 @@ Lecturer: Mu Li
 
 Notes recorded by Huangxin
 
-- Newton method
+**Newton method**
 	- Convex objective function function
-	- Nonnegative second derivative
-	
-- Parallem Newton method
+	- Nonnegative second derivative	
+    - Parallem Newton method
 
 **BFGS algorithm**
 - Basic Idea
@@ -78,7 +77,7 @@ Notes recorded by Huangxin
 		
 **Building Cluster on Terminal**
 
-[Terminal Cluster] (https://www.terminal.com/terminals)
+Platform used: [Terminal Cluster](https://www.terminal.com/terminals)
 
 - Star Steps
 	- Step 1: copy your configuration to this machines
@@ -127,7 +126,9 @@ Notes recorded by Huangxin
 		- the delay around 5, 8(for larger data) will be more appropriate
 	- number of blocks	
 		- reduce the number of blocks  can reduce the synchronization cost
-
+	
+- Comments	
+	- if deep-learning, maybe would like to try mini-batch
 
 
 	
