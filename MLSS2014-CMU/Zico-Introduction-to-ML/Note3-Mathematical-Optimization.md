@@ -23,7 +23,6 @@ Solving Optimization Problem
 - Classification of optimization problems
 	- Convex problems: including Semidefinite programming, Quadratic programming, Linear programming
 	- Nonconvex problems: including Integer programming, 
----	
 
 ### Applications
 1. Least Squares
@@ -47,10 +46,9 @@ Solving Optimization Problem
 	- Scale
 		- the cost will be n^2, where n is the dimension of the cost
 		- optimization tool could solve it in times linear to n?
----
 	
 ### Convex Optimization Problems
--Advantage
+- Advantage
 	- can be solved in polynomial time, and you can find the global optimal solution
 - Formal Definition	
 	- minimize_x f(x), s.t. x \in C, where x in optimization variable, f is a convex function and feasible set C is convex set
