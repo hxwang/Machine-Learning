@@ -1,9 +1,10 @@
 Modeling stuff-Clusters
+=======================
 
 * Lecturer: 
 * Record by Huangxin
 * Date: 07/14/2014
-==================
+
 
 ### Hierarchy of Clusters
 - Examples
