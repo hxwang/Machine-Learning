@@ -53,7 +53,7 @@ def main():
     xArr, yArr = reg.loadDataSet('abalone.txt')
     rntMat =  stageWise(xArr, yArr,0.01,200)
     print rntMat
-    
+
 
 if __name__ == "__main__":
     main()
