@@ -63,6 +63,12 @@ Online Component
 	- \epsilon-greedy: random exploration using faction \epsilon of traffic
 	- softmax: pick arm i with probability related to temperature and predicted CTR of item i 
 	- Thompson sampling: index = drawing posterior of an arm
+- characteristic of recommender systems
+	- dynamic set of items(arms)
+	- non-stationary CTR
+	- batch serving for scalability
+		- making a decision and updating the model for each user visit in real time is expensive
+		- batch serving is more flexible
 	
 
 
