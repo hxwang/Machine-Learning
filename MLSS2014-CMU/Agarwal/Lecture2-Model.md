@@ -87,5 +87,8 @@
 - Experiment
 	- Task: predict the rating that a user would give a movie
 
+### Summary
+	- Regularizing factors through features effective
+	- Regression based factor model that regularizes better and deals with both cold start and warm start
 	
 		
