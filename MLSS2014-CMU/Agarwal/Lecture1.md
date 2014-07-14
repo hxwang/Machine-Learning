@@ -67,18 +67,18 @@ Recommender System
 			- Granular models: less stable with few individuals
 			- Sweet spot often between extremes
 				- go granular but back-off via regularization when there is lack of data
-		- Another advantage on the web...
+		- Another advantage on the web
 	- Simple scoring model: most popular recommendation	
 		- single item to recommend per visit, select most popular(highest CTR item) to maximize total clicks
 			- good baseline for other sophisticated methods
 			- often a good starting point, easy to implement
-		- Solution: if CTRs is know, easy....
+		- Solution: if CTRs is know, easy
 	- Simple algorithm to estimate most popular item with small but dynamic item pool
 		- simple explore/exploit scheme
 		- temporal smoothing
 			- items CTRs change over time, provide more weight for recent
 		- discount item score with repeat views
-			- CTR(item) for a given user drops with repeat view by ...
+			- CTR(item) for a given user drops with repeat view by 
 
 	- More economical explorations? Better bandit solutions
 		- consider two armed problem
