@@ -51,38 +51,38 @@ Recommender System
 	- pre-deployment
 
 ### Scoring user-item interactions(e.g. CTR)
-	- we have lot of data, is processing power enough?
-		- Parameters to learn increases with sample size
-			- Rate of increase is not slow in many application, e.g. new users and items added continuously
-		- System dynamic and non-stationary
-		- Rapid learning and quick reaction important
-	- data sparsesness for personalization
-		- user-item interaction matrices **heavy tailed**
-			- user visits **power law**, items served **power law**, Bivariate Zipf: Owen & Dyer, 2011
-	- can machine learning help?
-		- some group behaviors relatively stable
-			- e.g. users in San Francisco tend to read more baseball news
-		- Key: modeling group behaviors(bias & variance tradeoff)
-			- Coarse models: more stable but does not generalize that well
-			- Granular models: less stable with few individuals
-			- Sweet spot often between extremes
-				- go granular but back-off via regularization when there is lack of data
-		- Another advantage on the web
-	- Simple scoring model: most popular recommendation	
-		- single item to recommend per visit, select most popular(highest CTR item) to maximize total clicks
-			- good baseline for other sophisticated methods
-			- often a good starting point, easy to implement
-		- Solution: if CTRs is know, easy
-	- Simple algorithm to estimate most popular item with small but dynamic item pool
-		- simple explore/exploit scheme
-		- temporal smoothing
-			- items CTRs change over time, provide more weight for recent
-		- discount item score with repeat views
-			- CTR(item) for a given user drops with repeat view by 
+- we have lot of data, is processing power enough?
+	- Parameters to learn increases with sample size
+		- Rate of increase is not slow in many application, e.g. new users and items added continuously
+	- System dynamic and non-stationary
+	- Rapid learning and quick reaction important
+- data sparsesness for personalization
+	- user-item interaction matrices **heavy tailed**
+		- user visits **power law**, items served **power law**, Bivariate Zipf: Owen & Dyer, 2011
+- can machine learning help?
+	- some group behaviors relatively stable
+		- e.g. users in San Francisco tend to read more baseball news
+	- Key: modeling group behaviors(bias & variance tradeoff)
+		- Coarse models: more stable but does not generalize that well
+		- Granular models: less stable with few individuals
+		- Sweet spot often between extremes
+			- go granular but back-off via regularization when there is lack of data
+	- Another advantage on the web
+- Simple scoring model: most popular recommendation	
+	- single item to recommend per visit, select most popular(highest CTR item) to maximize total clicks
+		- good baseline for other sophisticated methods
+		- often a good starting point, easy to implement
+	- Solution: if CTRs is know, easy
+- Simple algorithm to estimate most popular item with small but dynamic item pool
+	- simple explore/exploit scheme
+	- temporal smoothing
+		- items CTRs change over time, provide more weight for recent
+	- discount item score with repeat views
+		- CTR(item) for a given user drops with repeat view by 
 
-	- More economical explorations? Better bandit solutions
-		- consider two armed problem
-		- optimal solution
+- More economical explorations? Better bandit solutions
+	- consider two armed problem
+	- optimal solution
 	
 			
 		
