@@ -47,9 +47,22 @@ Online Component
 			- consider a slightly different problem setting
 			- infinite time horizon, but future rewards are geometrically discounted
 			- theorem[Gittins 1979]: the optimal policy decouples and solves a bandit problem for each arm independently
+				- significantly reduce the problem dimension
 	- Minimax approach
 		- seeks to find a scheme that incurs bounded regret(with no or mild assumptions about the probability distribution)
-	
+		- compute the priority of each arm i in a way that the regret is bounded, lowest regret in the worst case
+			- priority = observed payoff + factor representing uncertainty
+		- one common policy is UCB1
+
+### Summary
+- classical multi-armed bandits
+	- a fixed set of arms with fixed rewards, no delay in feedback
+- Bayesian approach
+- minimax approach
+- heuristics
+	- \epsilon-greedy: random exploration using faction \epsilon of traffic
+	- softmax: pick arm i with probability related to temperature and predicted CTR of item i 
+	- Thompson sampling: index = drawing posterior of an arm
 	
 
 
