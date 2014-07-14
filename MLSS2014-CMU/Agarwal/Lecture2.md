@@ -36,7 +36,7 @@
 		- per item models(regression) based on user covariates attractive in such cases
 			- y_{ijt} ~ Bernoulli(p_{ijt})
 			- s_{ijt} = log()/(p_{ijt})(1-p_{ijt})
-		- serveral per-item regression
+		- several per-item regression
 			- s_{ijt} = x_{ij}' * Axj + x_{it}'B\theta_j, where x_{it}' affinity to old items...
 - Per-user, per-item models via 
 	- Latent Factor Models
@@ -56,5 +56,36 @@
 	- Main idea: flexible prior, predict factors through regressions
 	- Seamlessly handles cold-start and warm-start
 	- *modified prior to incorporate features*
+- Advantage of RLFM	
+	- better regularization of factors
+- Computing the E-step
+	- Stochastic EM(Markov Chain EM; MCEM)
+		- computer expectation by drawing samples from p(\delta|\theta_old,Y)
+		- effective
+	- **Monte Carlo E-step**
+		- through a vanilla Gibbs sampler(conditional closed form)
+		- Let o_ij = y_ij - \alpha_i - \beta_j - x_ij'*b
+		- e.g. if you watch a movie that everyone like, then there is not much information that could be collected
+			
+### Add topic discovery into matrix factorization: Factorized LDA(fLDA)
+- Overview
+	- LDA: Latent Dirichlet Allocation, give topic representation of  each document
+		- do a supervised LDA...
+		- use the rating given by user
+	- modeling the rating y_ij that usre i gives to item j as the user's affinity to the topics that the item has
+		- y_ij = ... + \sum_k s_ik *\bar(z_jk), s_ik is user i's affinity to topic k, z_jk = pr(item j has topic k)
+	- LDA is effective for unsupervised topic discovery (BLei' 03)
+		- for each topic k, draw a word distribution 
+		- for each item j, draw a topic distribution
+		- for each word, say the nth word, in item j
+			- draw a topic z_jn for that word from \theta_j
+			- ...
+- fLDA model
+	- Response: y_{ij} ~ N(\miu, ...)
+	- Supervised Topic Assignment
+		- new: likelihood of obseverd rating by users who rated item j when z_jn is assign to work n
+- Experiment
+	- Task: predict the rating that a user would give a movie
+
 	
 		
