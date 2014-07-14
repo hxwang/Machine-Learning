@@ -49,7 +49,6 @@ Recommender System
 - CTR(click through rate)
 - Evaluation
 	- pre-deployment
-	- ...
 
 ### Scoring user-item interactions(e.g. CTR)
 	- we have lot of data, is processing power enough?
