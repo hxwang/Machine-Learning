@@ -7,7 +7,7 @@ REEF Tutorial
 
 
 ### Procedure
-- [Reference]（https://github.com/Microsoft-CISL/REEF/wiki/How-to-download-and-compile-REEF)
+- [Reference](https://github.com/Microsoft-CISL/REEF/wiki/How-to-download-and-compile-REEF)
 - Platform: in terminal.com
 - Procedure
 	- terminal has installed  Java7, git,
