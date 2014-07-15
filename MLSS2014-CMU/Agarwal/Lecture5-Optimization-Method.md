@@ -85,3 +85,9 @@ Optimization Methods
 	- Constructing user profiles from multiple sources with less than full coverage
 	- Content understanding
 	- Metrics to measure user engagement(other than CTR)
+- Other problems
+	- whole page optimization
+		- incorporating correlations
+	- incorporating social information for better recommendation(News Feed Recommendation)
+	- multi-context Learning
+	- Utility elicitation
