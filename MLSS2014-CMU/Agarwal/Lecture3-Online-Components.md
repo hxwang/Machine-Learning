@@ -71,4 +71,26 @@ Online Component
 		- batch serving is more flexible
 	
 
+### MISC
+- Methods for Covariate Bandits
+	- Priority-based methods
+		- rank items according to the user-specific "score" of each items
+		- UCB(uppser confidence bound)
+		- Posterior draw(Thompson sampling)
+		- softmax
+	- \epsilon-Greedy
 
+- Multiple Positions, Ranking
+	- Feature-based approach
+	- Online optimization for ranked list
+	- Online optimization of submodular functions
+	
+### Online Component for Personalize 
+- Better Initialization for Linear Model
+	- Linear/fractorization model
+		- y_{ij} ~ N(\miu'_i, \beta_j, ...)
+
+- **FOBFM**: Fast Online Bilinear Factor Model
+	- Feature-based model initialization
+		- \beta_j ~ N(Ax_j, ..)
+	- Dimensionality reduction for fast model convergence
