@@ -34,29 +34,60 @@ Core-Sets
 	- log n: memory
 	- M: processors
 	- log(n)/M insertion time per point(Embarrassingly parallel)
-- Type of Corsets
+- Type of Coresets
 	- small (sub)set (e.g. \epsilon-nets)
 	- weighted subset
 	- additive weights
-	- **strong corset**: approximates any feasible solution
-	- **weak corset**: approximates only optimal solution
-	- **weaker corset**: spans an approximated solution
-	- **private corset**: using different privacy
+	- **strong Coreset**: approximates any feasible solution
+	- **weak Coreset**: approximates only optimal solution
+	- **weaker Coreset**: spans an approximated solution
+	- **private Coreset**: using different privacy
 - Core-Sets for HD images
 	- procedure
 		- Input image
-		- Corset for K-SVD on images
-		- Denoiser for corset
+		- Coreset for K-SVD on images
+		- Denoiser for Coreset
 		- Denoised image
 	- how to find outlier?
 		- sampling
 		- you are allowed to scan the data for once, but have no chance to see it again
 		- sensitivity(p)
 
-### sample imsage
+### sample image
 - Procedure
 	- C is a non-uniform sample of image patches
 	- patches with high variance are sampled with high probability
 	- **the weight of each sample is inverse proportional to the corresponding probability** 
+- how to solve optimization problem in Coreset?
+- Problems
+	- if there are noise? by using sampling, will you get better local optimal?
 	
+### Coreset techniques
+- Exponential grids
+	- try to optimize the size
+- Important Sampling
+	- reduction to \epsilon-nets
+- Gradient descent
+	- Frank-Wolfe Algorithm
+	- PCA
+- Bi-criteria approximation
+	- Creating a sampling distribution
+
+### Related Techniques
+- Sketches: random projections
+	- usually loss sparsity
+	- input is matrix with integer entries
+	- support update for entries
+-...
+
+### Application
+- Real-time clustering
+	- motivation
+		- wifi servers, moving the servers to serve people
+	- problem model
+		- cluster n moving clients to k servers
+		- minimize max of: client-server distance, server-server distance
+	- Coreset for(unconstrained) k clusters
+		
+
 
