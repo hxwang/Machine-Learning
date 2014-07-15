@@ -16,7 +16,7 @@ Core-Sets
 	- Google PageRank
 	- Image compression
 	- Non-negative matrix factorization
-	- Hidden Markov chain
+	- Hidden Markov Model
 	- ...
 - Big data
 	- characteristics
