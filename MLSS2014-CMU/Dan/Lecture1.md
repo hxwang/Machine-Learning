@@ -42,5 +42,21 @@ Core-Sets
 	- **weak corset**: approximates only optimal solution
 	- **weaker corset**: spans an approximated solution
 	- **private corset**: using different privacy
+- Core-Sets for HD images
+	- procedure
+		- Input image
+		- Corset for K-SVD on images
+		- Denoiser for corset
+		- Denoised image
+	- how to find outlier?
+		- sampling
+		- you are allowed to scan the data for once, but have no chance to see it again
+		- sensitivity(p)
+
+### sample imsage
+- Procedure
+	- C is a non-uniform sample of image patches
+	- patches with high variance are sampled with high probability
+	- **the weight of each sample is inverse proportional to the corresponding probability** 
 	
 
