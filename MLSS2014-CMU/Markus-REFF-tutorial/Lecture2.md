@@ -34,21 +34,21 @@ REEF Tutorial
 	
 	- compile and install 
 	```
-	mvn -DeskipTests clean install
+	mvn -DskipTests clean install
 	```
 	
 	
 	- get WAKE, compile
 	```
 	git clone https://github.com/Microsoft-CISL/WAKE 
-	mvn -DeskipTests clean install	 
+	mvn -DskipTests clean install	 
 	```
 	- get REEF, in REEF, checkout MLSS, compile
 	```
 	git clone https://github.com/Microsoft-CISL/REEF
 	cd REEF
 	git checkout MLSS
-	mvn -DeskipTests clean install	
+	mvn -DskipTests clean install	
 	```
 	- run hello-reff locally
 	```
