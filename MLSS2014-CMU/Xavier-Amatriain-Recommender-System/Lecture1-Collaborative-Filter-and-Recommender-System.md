@@ -112,7 +112,28 @@ Collaborative Filter and Recommender System
 	- Memory-based CF algorithms
 		- use all the rating I have to do the prediction
 		- the nearest neighbour
-
+- SVD/MF
+	- reduce the item space to a lower space
+		- X[n*m] = U[n*r]S[r*r]*[V[m*r]]'
+			- X: m*n, m user, n items
+			- U: n items, r factors
+	- using stochastic gradient descent to compute
+	- rating prediction	
+		- baseline b_uv = \miu + b_u + b_v (user & item deviation from average)
+		- predict rating as: r_uv = b + p_u'*q_v(p_u is user factor, q_v is item factor)
+		- SVD++, asymmetric variations and implicit feedback...
+- **Restricted Boltzmann Machines(RBM)**
+	- introduction
+		- each unit is a state that can be active or in-active
+		- each input to a unit is associated a weight
+		- the transfer function calculate a score based on the weighted sum of inputs
+		- score is passed to the active .. to compute the probability of active
+	- restricted the connectivity to simplify learning
+- Artificial Neural Network
+	
+	
+	
+	
 
 ### Comments
 - In collaborative filtering, the feature engineering step is not required
