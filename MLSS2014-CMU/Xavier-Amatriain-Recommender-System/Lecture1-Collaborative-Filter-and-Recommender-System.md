@@ -45,7 +45,7 @@ Collaborative Filter and Recommender System
 		- Data preparation...
 - Machine Learning + all other things
 	- user interface, system requirements(efficiency, scalability, privacy), serendipity
-- serendipity
+- Serendipity
 	- unsought finding
 	- don't recommend items the user already knows or would have found anyway
 	- expand the user's taste into neighboring areas by improving the obvious
@@ -81,6 +81,38 @@ Collaborative Filter and Recommender System
 	- a non-personalized approach is by using the average of all users
 	- MAE_{NP} = \sum_{i,j} abs(v_{ij} - v_j)/(?), where v_j is the average rating for item j
 	- Netflix Prize's first conclusion: it is really extremely simple to produce "reasonable" recommendations, and extremely hard to improve
+- UB collaborative rating
+	- user u_i, product p_j
+	- a matrix of user rating, v_ij is rating of user i to product j
+	- predict for user i 
+		- approach 1: combine the average of my neighbours
+	- the weight of neighbors?
+		- similarity can be computed by **Pearson correlation**
+		- cos(u_i,u_j) = sum_k v_ik*v_kj/sqrt(sum_m v_ik^2 * sum_m v_kj^2)
+	- Challenges of User-Based CF algorithms
+		- sparsity, e.g. evaluation of large items sets, users purchases are under 1%
+		- difficult to make predictions based on nearest neighbor algorithms, accuracy of recommendations may be poor
+		- scalability, nearest neighbor require computation that grows with the number or users and the number of items
+		- poor relationship among like minded but sparse-rating users
+		- solution: usage of latent models 
+- Item-item collaborative filtering
+	- item similarity, e.g. cosine-based similarity
+- The sparsity problem
+	- typically; large product sets, user ratings for a small percentage of them
+		e.g. in amazon, two user boy 100, and have 1 in common is of low probability
+		e.g. in Netflix prize, rating data in a user/movie matrix is 8500M, and only 100M are not zero
+	- methods of dimensionality reduction
+		- matrix factorization
+		- clustering
+		- projection(PCA)
+	- a web-based recommender can suffer serious scalability problems, the worst-case complexity can by O(m*n)
+- Other approaches to CF
+	- Model-based CF algorithms
+		- use all the data I have to build a model, e.g, probabilistic, ...
+	- Memory-based CF algorithms
+		- use all the rating I have to do the prediction
+		- the nearest neighbour
 
 
-### 
+### Comments
+- In collaborative filtering, the feature engineering step is not required
