@@ -76,8 +76,11 @@ Collaborative Filter and Recommender System
 	- user feedback must be reliable
 	- products must be standardized
 	- assumes that prior behavior determines current behavior
-	
-
+- Personalized vs Non-Personalized CF
+	- CF recommendation are personalized since the prediction is based on similar users
+	- a non-personalized approach is by using the average of all users
+	- MAE_{NP} = \sum_{i,j} abs(v_{ij} - v_j)/(?), where v_j is the average rating for item j
+	- Netflix Prize's first conclusion: it is really extremely simple to produce "reasonable" recommendations, and extremely hard to improve
 
 
 ### 
