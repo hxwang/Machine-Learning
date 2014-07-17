@@ -4,7 +4,7 @@ REEF Tutorial
 * Lecturer: Markus Weimer
 * Recorded by: Huangxin
 * Date: 07/15/2014
-
+* [Slides](http://www.reef-project.org/2014/07/15/slides-for-the-second-day-of-the-reef-tutorial-at-mlss/)
 
 ### Procedure
 - [Reference](https://github.com/Microsoft-CISL/REEF/wiki/How-to-download-and-compile-REEF)

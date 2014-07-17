@@ -4,6 +4,7 @@ REEF Tutorial
 * Lecturer: Markus Weimer
 * Recorded by: Huangxin
 * Date: 07/14/2014
+* [Slides](http://www.reef-project.org/2014/07/14/slides-from-day-one-of-the-machine-learning-summer-school/)
 
 ### Distributed Learning on Hadoop
 - Drawback
