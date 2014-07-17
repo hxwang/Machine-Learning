@@ -81,7 +81,7 @@ Collaborative Filter and Recommender System
 	- a non-personalized approach is by using the average of all users
 	- MAE_{NP} = \sum_{i,j} abs(v_{ij} - v_j)/(?), where v_j is the average rating for item j
 	- Netflix Prize's first conclusion: it is really extremely simple to produce "reasonable" recommendations, and extremely hard to improve
-- UB collaborative rating
+- **UB collaborative rating**
 	- user u_i, product p_j
 	- a matrix of user rating, v_ij is rating of user i to product j
 	- predict for user i 
@@ -95,7 +95,7 @@ Collaborative Filter and Recommender System
 		- scalability, nearest neighbor require computation that grows with the number or users and the number of items
 		- poor relationship among like minded but sparse-rating users
 		- solution: usage of latent models 
-- Item-item collaborative filtering
+- **Item-item collaborative filtering**
 	- item similarity, e.g. cosine-based similarity
 - The sparsity problem
 	- typically; large product sets, user ratings for a small percentage of them
@@ -112,24 +112,28 @@ Collaborative Filter and Recommender System
 	- Memory-based CF algorithms
 		- use all the rating I have to do the prediction
 		- the nearest neighbour
-- SVD/MF
-	- reduce the item space to a lower space
-		- X[n*m] = U[n*r]S[r*r]*[V[m*r]]'
-			- X: m*n, m user, n items
-			- U: n items, r factors
-	- using stochastic gradient descent to compute
-	- rating prediction	
-		- baseline b_uv = \miu + b_u + b_v (user & item deviation from average)
-		- predict rating as: r_uv = b + p_u'*q_v(p_u is user factor, q_v is item factor)
-		- SVD++, asymmetric variations and implicit feedback...
-- **Restricted Boltzmann Machines(RBM)**
-	- introduction
-		- each unit is a state that can be active or in-active
-		- each input to a unit is associated a weight
-		- the transfer function calculate a score based on the weighted sum of inputs
-		- score is passed to the active .. to compute the probability of active
-	- restricted the connectivity to simplify learning
-- Artificial Neural Network
+		
+### SVD/MF
+- reduce the item space to a lower space
+	- X[n*m] = U[n*r]S[r*r]*[V[m*r]]'
+		- X: m*n, m user, n items
+		- U: n items, r factors
+- using stochastic gradient descent to compute
+- rating prediction	
+	- baseline b_uv = \miu + b_u + b_v (user & item deviation from average)
+	- predict rating as: r_uv = b + p_u'*q_v(p_u is user factor, q_v is item factor)
+	- SVD++, asymmetric variations and implicit feedback...
+	
+### Restricted Boltzmann Machines(RBM)
+- Introduction
+	- each unit is a state that can be active or in-active
+	- each input to a unit is associated a weight
+	- the transfer function calculate a score based on the weighted sum of inputs
+	- score is passed to the active .. to compute the probability of active
+- Restricted the connectivity to simplify learning
+- [Paper](http://www.cs.utoronto.ca/~hinton/absps/netflixICML.pdf)
+- Activation probability is used to recommend items
+- Note: current product is a combination for SVD++ and RBM, linear combination
 	
 	
 	
