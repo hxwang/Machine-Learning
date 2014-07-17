@@ -135,9 +135,58 @@ Collaborative Filter and Recommender System
 - Activation probability is used to recommend items
 - Note: current product is a combination for SVD++ and RBM, linear combination
 	
-	
-	
-	
+### Clustering
+- Idea
+	- build group of similar users
+	- compute the typical preferences of a cluster
+- Pros
+- Cons
+	- assume user behave can be grouped in a cluster
+- Locality-sensitive Hashing(LSH)
+	- Method for grouping similar items in highly dimensional spaces
+	- find a hashing function s.t. similar items are grouped in the same buckets
+	- main application is nearest-neighbours	
+		- hashing function is found iteratively by concatenating a random hashing functions
+		- addresses one of the NN main concerns, performance
+- Association Rules
+	- Past perchases are transformed into relationship of common perchases e.g. customer buy A will also buy B
+	- recommendations are constrained to some minimum level of confidence
+	- Pros
+		- fast to implement, execute
+		- require little storage
+	- Cons
+		- not suitable if knowledge of preference change rapidly, e.g. click website?
+- Classifiers
+	- are general computation model trained using positive and negative examples
+	- they may take into input: vector of item features, vector of user preferences, or the relationship among them
+	- Pros
+		- versatile
+		- can be combined with other methods to improve the accuracy of recommendations
+	- Cons
+		- may overfit(regularization)
+		- need a relevant training set
+		
+### Limitation of CF
+- Cold start: New items need to get enough rating. There should be enough users in the system.
+	- for a new user: recommend popular things 
+	- for a new item: content-based approach
+- Popularity Bias: it is hard to recommend something that really to someone's taste
+	- usually will recommend popular items(items in the tail do not get much data)
+
+### Content-based Recommendation
+- Find similarity of items by analyzing the contents, e.g. meta data associated in items
+	- e.g. recommend book or webpages, 
+	- we have a description of the features of items
+	- then we can build model, we have some users, some documents, some ratings(or click informaiton), then we trained the classifier based on the information
+		- e.g. neurual network
+	- Pros
+		- no need for on other users
+	- Cons
+		- build model, overfit
+- Contents usually described by words
+- Cosine similarity
+- TF-IDF(frequency/inverse document frequency)
+- [Recommending new movies: even a few ratings are more valuable than metadata](http://dl.acm.org/citation.cfm?id=1639731)
 
 ### Comments
 - In collaborative filtering, the feature engineering step is not required
