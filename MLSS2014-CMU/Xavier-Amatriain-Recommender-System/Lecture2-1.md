@@ -116,6 +116,7 @@ Collaborative Filter and Recommender System(Novel Methods)
 - Demographic Methods
 	- aim to categorize the user based on personal attributes and make recommendation based on demographic classes	
 	- ...
+	
 ### HyBrid Approaches
 	- Weighted
 		- combine the results of different recommendation techqniues into a single recommendation list
