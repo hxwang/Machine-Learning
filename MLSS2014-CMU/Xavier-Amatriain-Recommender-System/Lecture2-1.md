@@ -68,7 +68,59 @@ Collaborative Filter and Recommender System(Novel Methods)
 		- model both linear and pair-wise interaction of k features(i.e. polynomial regression)
 		- traditional machine learning will overfit
 		- ...
+	- L2 regularized
+		- regression: optimize RMSE
+		- classification: optimize logistic log-likelihood
+		- ranking: optimize scores
+	- Can be trained using
+		- SGD
+		- Adaptive ...
+	- Learning parameters
+		- number of factors
+		- iterations
+		- initialized ...
+		
+### Deep Learning
+	- DL for collaborative Filtering
+		- e.g. how Spotify users RecurrentNetworks for Playlist prediction, [check here](http://erikbern.com/?p=589)
+	- Model
+		- we assume p(y_i|h_i) is a normal distribution, log-likelihood of the loss is just the negative L2 loss, -(y_t - h_t)^2 
+		- we can specify that h_(i+1) is the previous given an previous visible
+	- Problem
+		- in order to predict, we need to define a distribution of p(y_i|h_i)
+		- ...
+
+### Similarity
+	- Similarity can refer to different dimensions	
+		- e.g. metadata/tags
+		- e.g. user play behavior
+		- e.g. user rating behavior
+	- You can learn a model for each of them and finally learn an ensemble
+	- graph-based similarity
+		- Sim-Rank(Jeh & Widom, 02): two objects are similar if they are referenced by similar objects
+
+### Social and Trust-based Recommenders
+	- Definition
+		- a social recommender system recommends items that are "popular" in the social proximity of the user
+		- This idea of trust is central in social-based system
+		- it can be a general per-user value that takes into account social proximity but can also be topic-oriented
+	- Trust Inference
+		- Goal: select two individuals, i.e. the source(node A) and sink(node C), and recommend to the source how much to trust the sink
+	- Major algorithms--Networks
+		- Advogato(Levien)
+		- ...
+	- Building Recommender Systems Using Trust
+		- use trust as a way to give more weight to some users
+		- Trust for collaborative filtering
+			- use trust in place of (or combined with) similarity...
+	- Demographic Methods
+		- aim to categorize the user based on personal attributes and make recommendation based on demographic classes	
+		- ...
+### HyBrid Approaches
+	- 
 	
+			
+		
 	
 		
 
