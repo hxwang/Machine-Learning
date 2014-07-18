@@ -118,24 +118,24 @@ Collaborative Filter and Recommender System(Novel Methods)
 	- ...
 	
 ### HyBrid Approaches
-	- Weighted
-		- combine the results of different recommendation techqniues into a single recommendation list
-		-e.g. Example 1: a linear combination of recommendation scores
-		-e.g. treat the output of each recommender(collaborative, content-based and demographic) as a set of votes, ...
-	- Switching
-		- The system users criterion to switch between techniques
-		- e.g. if the content-based system cannot make a recommendation with sufficient confidence, then a colaborative recommendation is attempted
-	- Mixed
-		- Recommendations from more than one technique are presented together
-		- define a way to mix the results
-		- however, it does not get around the "new-user" start problem
-	- Feature Combination
-		- feature can be combined in several directions
-	- Cascade
-		- our recommendation technique is employed first to produce a coarse ranking of candidates and a second technique refines the recommendation
-		- conscadingallows the system to avoid emloying the second, low-priority...
-	- Feature Augmentation
-		- ...
+- Weighted
+	- combine the results of different recommendation techqniues into a single recommendation list
+	-e.g. Example 1: a linear combination of recommendation scores
+	-e.g. treat the output of each recommender(collaborative, content-based and demographic) as a set of votes, ...
+- Switching
+	- The system users criterion to switch between techniques
+	- e.g. if the content-based system cannot make a recommendation with sufficient confidence, then a colaborative recommendation is attempted
+- Mixed
+	- Recommendations from more than one technique are presented together
+	- define a way to mix the results
+	- however, it does not get around the "new-user" start problem
+- Feature Combination
+	- feature can be combined in several directions
+- Cascade
+	- our recommendation technique is employed first to produce a coarse ranking of candidates and a second technique refines the recommendation
+	- conscadingallows the system to avoid emloying the second, low-priority...
+- Feature Augmentation
+	- ...
 
 ### A practical example in Netflix Prize
 	
