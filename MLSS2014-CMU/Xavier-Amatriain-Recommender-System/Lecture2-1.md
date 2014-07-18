@@ -19,23 +19,24 @@ Collaborative Filter and Recommender System
 		- ...
 	- But, it is hard to optimized machine-learned models directly on these measures(they are not differentiable)
 	- Recent research on models that directly optimize ranking measures
-- Approaches
-	- Pointwise
-		- ranking function minimizes loss function defined on individual relevance judgement
-		- ranking score based on regression or classification
-	- Pairwise
-		- Loss function is defined on pair-wise preferences
-		- Goal: minimize the number of inversions in ranking
-		- Ranking problem is then transformed into the binary classification problem
-		- RankSVM, RankBoost, RankNet, FRrank...
-	- ListWise
-		- Indirect Loss Function
-			- RankCosine: 
-			- ListNet
-		- Direct
-			- directly optimize IR measures through Genetic Programming
-			- directly optimize measures with Simulated Annealing
-			- gradient descent on smoothed version of objective function
-			- SVM-MAP relaxes the MAP metric by adding it to the SVM constraints
-			- AdaRank uses boosting to optimize NDCG
+
+### Approaches
+- Pointwise
+	- ranking function minimizes loss function defined on individual relevance judgement
+	- ranking score based on regression or classification
+- Pairwise
+	- Loss function is defined on pair-wise preferences
+	- Goal: minimize the number of inversions in ranking
+	- Ranking problem is then transformed into the binary classification problem
+	- RankSVM, RankBoost, RankNet, FRrank...
+- ListWise
+	- Indirect Loss Function
+		- RankCosine: 
+		- ListNet
+	- Direct
+		- directly optimize IR measures through Genetic Programming
+		- directly optimize measures with Simulated Annealing
+		- gradient descent on smoothed version of objective function
+		- SVM-MAP relaxes the MAP metric by adding it to the SVM constraints
+		- AdaRank uses boosting to optimize NDCG
 	
