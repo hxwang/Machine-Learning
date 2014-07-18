@@ -61,10 +61,15 @@ Collaborative Filter and Recommender System(Novel Methods)
 	- TF offers a way to integrate as many contextual variables ad needed
 	- can be "easily" trained in a similar way to MF
 	- however, factorization machine seem to work better, especially for higher dimensional spaces
-- Factorization Machine
+- Factorization Machine(Rendle,2010)
 	- Generalization of regularized matrix(and tensor) factorization approaches combined with linear(or logistic) regression
 	- Problem: each new adaptation of matrix or tensor factorization requires deriving new learning algorithms
-		
+	- Approaches: treat input as a real-valued feature vector
+		- model both linear and pair-wise interaction of k features(i.e. polynomial regression)
+		- traditional machine learning will overfit
+		- ...
+	
+	
 		
 
 	
