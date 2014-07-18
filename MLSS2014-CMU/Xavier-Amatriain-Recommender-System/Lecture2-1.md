@@ -124,7 +124,7 @@ Collaborative Filter and Recommender System(Novel Methods)
 	-e.g. treat the output of each recommender(collaborative, content-based and demographic) as a set of votes, ...
 - Switching
 	- The system users criterion to switch between techniques
-	- e.g. if the content-based system cannot make a recommendation with sufficient confidence, then a colaborative recommendation is attempted
+	- e.g. if the content-based system cannot make a recommendation with sufficient confidence, then a collaborative recommendation is attempted
 - Mixed
 	- Recommendations from more than one technique are presented together
 	- define a way to mix the results
@@ -133,11 +133,15 @@ Collaborative Filter and Recommender System(Novel Methods)
 	- feature can be combined in several directions
 - Cascade
 	- our recommendation technique is employed first to produce a coarse ranking of candidates and a second technique refines the recommendation
-	- conscadingallows the system to avoid emloying the second, low-priority...
+	- cascading allows the system to avoid employing the second, low-priority...
 - Feature Augmentation
 	- ...
 
-### A practical example in Netflix Prize
+### Conclusions
+- Importance of User/Data Mining is going to be a growing trend 
+- Algorithms can only be as good as the data they use as input
+- For many applications such as Recommender Systems(but also Search, Advertising, and even Networks) understanding data and users is vital
+
 	
 	
 			
