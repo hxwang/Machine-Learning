@@ -43,7 +43,7 @@ Collaborative Filter and Recommender System(Novel Methods)
 ### Context-aware Recommendations
 - Pre-Filtering Technique
 	- using contextual information to select the most relevant
-	-
+	- ...
 - Post-Filtering Technique
 - Contextual Modeling
 	- using contextual information directly in the modeling learning phase
