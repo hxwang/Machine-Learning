@@ -1,0 +1,43 @@
+## Chap 5: Classification: Alternative Techniques
+
+### Contents
+- 5.1 Rule-Based Classifer
+  - 5.1.1 How a rule-based classifer works
+  - 5.1.2 Rule-ordering schemes
+  - 5.1.3 How to build a rule-based classifier
+  - 5.1.4 Direct methods for rule extraction
+  - 5.1.5 Indirect methods for rule extraction
+  - 5.1.6 Characteristics for rule-based classifiers
+- 5.2 Nearest-Neighbor Classifiers
+  - 5.2.1 Algorith,
+  - 5.2.2 Characteristics of Nearest-Neighbor Classifiers
+- 5.3 Bayesian Classifiers
+  - 5.3.1 Bayes theorem
+  - 5.3.2 Using the Bayes theorem for classification
+  - 5.3.3 Naive Bayes classifier
+  - 5.3.4 Bayes error rate
+  - 5.3.5 Bayesian Belief Networks
+- 5.4 Artificial Neural Network (ANN)
+  - 5.4.1 Preceptron
+  - 5.4.2 Multilayer Artificial Neural Network
+  - 5.4.3 Characteristics of ANN
+- 5.5 Support Vector Machine (SVM)
+  - 5.5.1 Maximum margin hyperplanes
+  - 5.5.2 Linear SVM: seperable case
+  - 5.5.3 Linear SVM: Nonseperable case
+  - 5.5.4 Nonlinear SVM
+  - 5.5.5 Characteristics of SVM
+- 5.6 Ensemble Methods
+  - 5.6.1 Rationale for Ensemble method
+  - 5.6.2 Methods for constructing and ensemable classifer
+  - 5.6.3 Bias-variance decomposition
+  - 5.6.4 Bagging
+  - 5.6.5 Boosting
+  - 5.6.6 Random Forests
+  - 5.6.7 Empirical Comparison among ensemable methods
+- 5.7 Class Imbalance Problem
+  - 5.7.1 Alternative Metrics
+  - 5.7.2 The Receiver Operating Characteristic Curve
+  - 5.7.3 Cost-sensitive Learning
+  - 5.7.4 Sampling-Based Approaches
+- 5.8 Multiclass Problem
