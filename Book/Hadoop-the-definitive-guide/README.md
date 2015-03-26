@@ -6,4 +6,4 @@
 
 |Name| Status|
 |:---|:---|
-|[chap 1: Introduction to Hadoop](./file/chap1.md)| 3/26/2015- |
+|[chap 1: Introduction to Hadoop](./file/chap1.md)| 3/26/2015- 3/26/2015 |
