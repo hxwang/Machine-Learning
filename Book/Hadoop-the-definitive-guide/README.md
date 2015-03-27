@@ -7,3 +7,4 @@
 |Name| Status|
 |:---|:---|
 |[chap 1: Introduction to Hadoop](./file/chap1.md)| 3/26/2015- 3/26/2015 |
+|[Chap 2: Introduction to MapReduce](./file/chap2.md)| 3/27/2015-3/27/2015|
