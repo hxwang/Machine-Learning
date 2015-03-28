@@ -34,22 +34,21 @@
 - Read data through HDFS URL
 - Read data through Filesystem API
 
-### FSDataInputStream
-- extends `java.io.DataInputStream`
-- `seek()`: jump to any absolute position, this is an expensive operation!
-- `skip()`: jump to relative position
-- `read()`: read at most length, store to the buffer with offset position
-- `create()`: create files
-
-### FSDataOutputStream
-- cannot index a random position in a file, because HDFS only allow write in order
-
-### Other operations
-- FileStatus
-- ListStatus
-- GlobeStatus
-  - return those matched
-- PathFilter: excludes those unwanted
+### File Operation
+-FSDataInputStream
+  - extends `java.io.DataInputStream`
+  - `seek()`: jump to any absolute position, this is an expensive operation!
+  - `skip()`: jump to relative position
+  - `read()`: read at most length, store to the buffer with offset position
+  - `create()`: create files
+- FSDataOutputStream
+  - cannot index a random position in a file, because HDFS only allow write in order
+- Other operations
+  - FileStatus
+  - ListStatus
+  - GlobeStatus
+    - return those matched
+  - PathFilter: excludes those unwanted
 
 ### Data Stream
 - use `open()` to open the files
