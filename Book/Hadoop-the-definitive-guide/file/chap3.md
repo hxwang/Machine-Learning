@@ -58,5 +58,18 @@
   - distributed ystem call namenode via RPC
   - namenode will check whether the file exists, if exists, it will throw IOException
   - `DistributedFileSystem` return a `FSDataOutputStream` to client, client then uses it to write data. `FSDataOutputStream` has a `DFOutPutStream` which will responsible for the communication between datanode and namenode.
-  
-  
+
+### Synchronization
+- `syn()`: syn the data in datanode, including buffer
+
+### Import Data
+- Flume: Apache Flume
+- Apache Sqoop
+
+### Distcp parallel copy
+- scenario: transmit data between two HDFS clusters
+  - note these two HDFS should have the same version, because the RPC protocol are not compatible
+
+### Hadoop Archive
+- archive small files to HDFS blocks, HAR file
+- another solution for dealing with small files (they may exhaust the namenode space) is to use `CombineFileInputFormat`
