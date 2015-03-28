@@ -26,3 +26,37 @@
 - If namenode lost, then all files in the file system will lost since we do not know how to rebuilt it using datanode
   - One approach is to backup the units that consistuted the file system
   - The other approach is to execute another namenode which cannot be use as namenode. This extra namenode wil help edit log and combine mirror, in order to avoid large logs. This extra namenode will be in another physical machine since it requires high CPU time.
+
+### Visit HDFS
+- Throught HTTP
+  - direct visit
+  - through HDFS proxies
+- Read data through HDFS URL
+- Read data through Filesystem API
+
+### FSDataInputStream
+- extends `java.io.DataInputStream`
+- `seek()`: jump to any absolute position, this is an expensive operation!
+- `skip()`: jump to relative position
+- `read()`: read at most length, store to the buffer with offset position
+- `create()`: create files
+
+### FSDataOutputStream
+- cannot index a random position in a file, because HDFS only allow write in order
+
+### Other operations
+- FileStatus
+- ListStatus
+- GlobeStatus
+  - return those matched
+- PathFilter: excludes those unwanted
+
+### Data Stream
+- use `open()` to open the files
+  - distributed system call namenode via RPC
+- user `create()` to create file
+  - distributed ystem call namenode via RPC
+  - namenode will check whether the file exists, if exists, it will throw IOException
+  - `DistributedFileSystem` return a `FSDataOutputStream` to client, client then uses it to write data. `FSDataOutputStream` has a `DFOutPutStream` which will responsible for the communication between datanode and namenode.
+  
+  
