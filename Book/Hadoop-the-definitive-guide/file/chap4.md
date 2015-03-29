@@ -26,3 +26,5 @@
   - use CompressionCodeCFactory to decide which codec to use
 - CodecPool
   - if frequent compression/decompression are required, we can use `CodecPool`, it supprts compression/decompression
+  
+### Serialization
