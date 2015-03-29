@@ -36,7 +36,12 @@
   - distributed systems communicate through Remote Procedure Call （RPC)
   - it serailizes the data into binaries
   - it has the following properties
-    - compact
+    - compact: takes small space
     - efficiency
     - extenable
     - interation between client and server
+- Hadoop use `Writable` format for serialization
+  - `IntWritable`: conversion of java int
+  - `writeable.write(sth)`
+  - `writable.read(sth)`: decompression
+  - `writeable.get()`: get original data
