@@ -32,3 +32,11 @@
   - serialization is common in the following two areas
     - data storage
     - communication
+- RPC
+  - distributed systems communicate through Remote Procedure Call （RPC)
+  - it serailizes the data into binaries
+  - it has the following properties
+    - compact
+    - efficiency
+    - extenable
+    - interation between client and server
