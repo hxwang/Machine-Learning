@@ -28,3 +28,7 @@
   - if frequent compression/decompression are required, we can use `CodecPool`, it supprts compression/decompression
   
 ### Serialization
+- convert structure data to stream data
+  - serialization is common in the following two areas
+    - data storage
+    - communication
