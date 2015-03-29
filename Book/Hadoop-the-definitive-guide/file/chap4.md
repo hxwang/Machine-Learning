@@ -14,3 +14,15 @@
   - if we do not want to compute the crc, we can use `RawLocalFileSystem`
   
 ### Data Compression
+- Types 
+  - DEFLATE
+    - zlip
+  - gzip
+    - incremental of DEFLATE, by adding a file head and tail
+- Devisible?
+  - This is important, because it will be very suitable for MapReduce
+- Codec compress-decompresee approach
+  - use CompressionCodeC to compress/decompress
+  - use CompressionCodeCFactory to decide which codec to use
+- CodecPool
+  - if frequent compression/decompression are required, we can use `CodecPool`, it supprts compression/decompression
