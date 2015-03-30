@@ -45,3 +45,17 @@
   - `writeable.write(sth)`
   - `writable.read(sth)`: decompression
   - `writeable.get()`: get original data
+
+### Serialization Framework
+- Why not use java object serialization
+  - because it has put the class name in the serialized result as well
+  - thus it is not good for random access
+
+### Avro
+- a serialization system, indepdent to programming language
+
+### Data structure based on files
+- SequenceFile
+- MapFile
+  - `next()`
+  - `get()`: ramdom access
