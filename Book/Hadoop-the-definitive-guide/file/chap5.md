@@ -31,3 +31,12 @@
 - jobtracker web GUI
   - `http://jobtracker-host:50030/`
 - every execute history will be kept in `logs/history`
+
+### Analyze tool
+- HRROF tool
+
+### Job Control
+- use DAG 
+- Apache Oozie
+  - Oozie send a HTTP callback to client to notify the work stream
+  - It can receives call back when enters or exists an action
