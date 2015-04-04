@@ -1,4 +1,4 @@
-## How MapReduce Work
+## Chap 6: How MapReduce Work
 
 ### MapReduce
 - `mapred.job.tracker`
@@ -24,4 +24,12 @@
   - when the tasktracker is ready for new job, jobtracker will assign it a new task
   - for map job, job tracker will select th tasktracker that is closer to the required files
   
-
+- Task execution
+  - tasktracker wil first copy the required files to local
+  - then new a  `TaskRunner` to run the job
+    - `TaskRunner` will use a JVM for each map or reduce job
+  - child process communicates with parent process via `umbilical`
+- Streaming
+  - output/intput communicate with process
+- Pipes
+  - listen to socket
