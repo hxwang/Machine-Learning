@@ -14,7 +14,7 @@
   - `HDFS`: distributed file system, use to share files 
 - How it works
 
-<img src="../figs/hadoop-mr.jpg" width="400" align="middle" />
+<img src="../figs/hadoop-mr.jpg" width="600" align="middle" />
 
 
 
