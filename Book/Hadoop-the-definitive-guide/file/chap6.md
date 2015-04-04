@@ -48,4 +48,4 @@
   - different YARN application can co-exist on the same cluster 
 - YARN MapReduce Procedure
 
-<img src="../figs/yarn-mr.png" width="600" align="middle" />
+<img src="../figs/yarn-mr.jpg" width="600" align="middle" />
