@@ -33,3 +33,16 @@
   - output/intput communicate with process
 - Pipes
   - listen to socket
+
+### YARN (Yet Another Resource Negotiator)
+- Motivation
+  - classical approach meets bottle neck when cluster nodes exceed around 4000
+- Jobtracker 
+  - dispatch jobs, task monitor
+- two manager
+  - Resource Manager
+  - Application Manager
+    - monitor life-cycle
+    - Each MapReduce job has a application master
+- Benefits
+  - different YARN application can co-exist on the same cluster 
