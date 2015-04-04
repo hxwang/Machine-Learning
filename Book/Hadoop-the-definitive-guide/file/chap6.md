@@ -16,5 +16,12 @@
 
 <img src="../figs/hadoop-mr.jpg" width="600" align="middle" />
 
-
+- `JobSummiter` Procedure
+  - send request to `jobtracker` for new job id
+  - copy required resources to a file named using jobid, in the file system of jobtracker
+- Communication
+  - use `heartbeat`
+  - when the tasktracker is ready for new job, jobtracker will assign it a new task
+  - for map job, job tracker will select th tasktracker that is closer to the required files
+  
 
