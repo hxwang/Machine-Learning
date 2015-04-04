@@ -13,5 +13,7 @@
   - `tasktracker`: exceute the divised jobs
   - `HDFS`: distributed file system, use to share files 
 - How it works
+<img src="../figs/hadoop-mr.jpg" width="400" />
 
-![](../figs/hadoop-mr.jpg)
+
+
