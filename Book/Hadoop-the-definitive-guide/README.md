@@ -11,3 +11,4 @@
 |[Chap 3: Hadoop Distributed File System](./file/chap3.md)| 3/28/2015|
 |[Chap 4: Hadoop I/O Operation](./file/chap4.md)|3/29/2015|
 |[Chap 5: MapReduce Application Develop](./file/chap5.md)| 4/1/2015|
+|[Chap 6: How MapReduce Work](file/chap6.md)|4/9/2015|
