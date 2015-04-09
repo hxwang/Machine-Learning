@@ -49,3 +49,8 @@
 - YARN MapReduce Procedure
 
 <img src="../figs/yarn-mr.jpg" width="600" align="middle" />
+
+
+### Job Scheduling
+- `setJobPriority()`: jobs have the following priorities, `VERY_HIGH`, `HIGH`, `NORMAL`, `LOW`, `VERY_LOW`
+- Note it uses FIFO, and not allowed preemption
