@@ -71,6 +71,6 @@
   - Launch a JVM costs 1s
   - a tasktracker can execute multiple tasks at the same time, but in different JVMs
 
-###　Skipping Mode
+### Skipping Mode
 - avoid an error in data cause the map-reduce process to stop
 - the error results skipped will be kept in `_logs/skip`
