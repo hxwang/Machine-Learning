@@ -58,5 +58,9 @@
 
 ### Shuffle and Sort
 - each map task will have a `buffer` memory, when buffer memeory is full, the contents will be `spill` to disk
+  - each time when the buffer memeory is full, a new file named `spill file` will be created
+  - when there are many `spill` files (>=3), `combiner` will be called
+  - when write to disk, it may use `compress`
+- when write to disk
+  - it will determine the partition based on what will be done in the `reduce` process
 
-- 
