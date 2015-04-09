@@ -54,3 +54,9 @@
 ### Job Scheduling
 - `setJobPriority()`: jobs have the following priorities, `VERY_HIGH`, `HIGH`, `NORMAL`, `LOW`, `VERY_LOW`
 - Note it uses FIFO, and not allowed preemption
+
+
+### Shuffle and Sort
+- each map task will have a `buffer` memory, when buffer memeory is full, the contents will be `spill` to disk
+
+- 
