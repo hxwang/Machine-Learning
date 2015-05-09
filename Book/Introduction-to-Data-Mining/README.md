@@ -12,4 +12,4 @@
 |Chap 3| [Exploring Data](file/chap3.md)| 03/24/2015|
 |Chap 4| [Classification](file/chap4.md)| 03/21/2015-03/22/2015|
 |Chap 5| [Classification: Alternative Techniques](file/chap5.md)| 03/22/2015|
-
+|Chap 6| [Association Analysis: Basic Concepts and Algorithms](file/chap6.md)|05/09/2015|
