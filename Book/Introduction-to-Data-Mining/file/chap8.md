@@ -1,0 +1,32 @@
+## Chap 8: Cluster Analysis: Basic Concepts and Algorithms
+
+- Overview
+  - What is cluster analysis
+  - Different Types of clustrings
+  - Different types of clusters
+- K-means
+  - The basic k-means algorithm
+  - K-means: additional issues
+  - Bisecting k-means
+  - K-means and different types of clusters
+  - Strengths and weakness
+  - K-means as an optimization problem
+- Agglomerative Hierarchical Clustering
+  - Basic Agglomerative hierarchical clustering algorithm
+  - Specific techniques
+  - The lance-william formula for cluster proximity
+  - Key issues in hierarchical clustering
+  - Strengths and weakness
+- DBSCAN
+  - Traditional density: center-based approach
+  - The DBSCAN algorithm
+  - Strengths and weakness
+- Cluster Evaluation
+  - Overview
+  - Unsupervised Cluster Evaluation using cohesion and seperation
+  - Unsupervised Cluster Evaluation using the proximity matrix
+  - Unsupervised Evaluation of Hierarchical Clustering
+  - Determine the correct number of clusters
+  - Clustering tendency
+  - Supervised measures of cluster validity
+  - Assessing the significance of cluster validity measures
