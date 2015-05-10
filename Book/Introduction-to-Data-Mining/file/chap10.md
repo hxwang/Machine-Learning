@@ -1,0 +1,22 @@
+## Chap 10: Anomaly Detection
+
+- Premilinaries
+  - Cause of anomalies
+  - Approaches to anomaly detection
+  - The use of class labels
+  - Issues
+- Statistical Approaches
+  - Detecting outliers in a univariate normal distribution
+  - Outliers in a multivariate normal distribution
+  - A mixture model approach for anomaly detection
+  - Strengths and weakness
+- Proximity-based outlier detection
+  - strengths and weakness
+- Density-based outlier detection
+  - Detection of outliers using relative density
+  - Strengths and weakness
+- Clustering-based Techniques
+  - Assessing the extent to which an object belongs to a cluster
+  - Impact of outliers on the initial clustering
+  - The number of clusters to use
+  - Strengths and weakness
